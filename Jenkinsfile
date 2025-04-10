@@ -1,6 +1,8 @@
-:pipeline {
+pipeline {
     agent any
-
+        tools{
+            maven'Maven-home'
+        }
     environment {
         APP_NAME = 'my-app'
         BUILD_DIR = 'build'
